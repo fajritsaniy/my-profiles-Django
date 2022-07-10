@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-import os
-DIRNAME = os.path.abspath(os.path.dirname(__file__))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -39,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myBio.apps.MybioConfig',
 ]
 
 MIDDLEWARE = [
@@ -53,9 +52,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myProfile.urls'
 
-TEMPLATE_DIRS = (
-    os.path.join(DIRNAME, 'templates/'),
-)
 
 TEMPLATES = [
     {

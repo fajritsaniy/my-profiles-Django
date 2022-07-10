@@ -1,92 +1,181 @@
 {% load static %}
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-	<title>Datatest Management</title>
-	<link rel = "icon" href ="{% static 'img/xl-logo1.png' %}" 
-        type = "image/x-icon">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Bootstrap Stylesheet -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      body {
+        font-family: Helvetica;
+        color: #fff;
+        background: #363636;
+      }
 
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:sans-serif" rel="stylesheet" type="text/css">
+      footer {
+        padding-top: 3rem;
+      }
+      a:link {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:active {
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
 
-	<!-- Styles -->
-	<style>
-		html,
-		body {
-			background-color: rgb(40, 40, 137);
-			color: white;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 100;
-			height: 100vh;
-			margin: 0;
-            zoom:100%;
-		}
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-		.full-height {
-			height: 100vh;
-		}
+    <title>Fajri Tsani Y | Portofolio</title>
+  </head>
 
-		.flex-center {
-			align-items: center;
-			display: flex;
-			justify-content: center;
-		}
+  <body style="background-color: rgb(3, 0, 27)">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fajri Tsani</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#social">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
 
-		.position-ref {
-			position: relative;
-		}
+    <!--Jumbotron Start-->
+    <section class="jumbotron text-center">
+      <img src="https://storage.cloud.google.com/kominfodicodingcourse01/profilePhoto.jpg" alt="Fajri Tsani" width="200" class="rounded-circle" style="border: 5px solid #a6a4af" />
+      <h1 class="display-4" style="color: rgb(221, 221, 221)">Fajri Tsani Y</h1>
+      <p class="lead" style="color: rgb(221, 221, 221)"> Microservices & API Test Engineer at XL Axiata</p>
+    </section>
+    <!--End Jumbotron-->
 
-		.top-right {
-			position: absolute;
-			right: 10px;
-			top: 18px;
-			font-family:'Roboto', sans-serif;
-		}
+    <!--About Start-->
+    <section id="about" style="color: rgb(221, 221, 221)">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-6">
+            <h3>About Me</h3>
+          </div>
+        </div>
+        <p></p>
+        <div class="row text-center justify-content-center fs-5">
+          <div class="col-10 text-center">
+            <p>
+              Hello World! I am Fajri Tsani Yustisiawandana as a Microservices & API Test Engineer at XL Axiata. I am a Python & Data enthusiast. Experienced in big data training using python technology with Cisco Networks, also experienced in fullstack java
+              technology bootcamp with JuaraCoding. And now still learning how to code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		.content {
-			text-align: center;
-		}
+    <!--End About-->
 
-		.title {
-			font-size: 61px;
-		}
+    <!--Projects Start-->
+    <section id="Projects" style="color: rgb(221, 221, 221)">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-6">
+            <h3>Projects</h3>
+          </div>
+        </div>
+        <p></p>
+        <div class="row text-center justify-content-center fs-5">
+          <div class="col-md-4 mb-3 text-center">
+            <div class="card text-white" style="background-color: rgb(0, 0, 0)">
+              <img src="https://storage.cloud.google.com/kominfodicodingcourse01/database.jpg" class="card-img-top" alt="Projects 1" />
+              <div class="card-body">
+                <a href="https://github.com/fajritsaniy/Service-DataBase" class="card-text">Made some simple API backend services use Spring Boot Framework and PostgreSQL</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 text-center">
+            <div class="card text-white" style="background-color: rgb(0, 0, 0)">
+              <img src="https://storage.cloud.google.com/kominfodicodingcourse01/covid19.jpg" class="card-img-top" alt="Projects 2" />
+              <div class="card-body">
+                <a href="https://github.com/fajritsaniy/Covid-19-Dashboard" class="card-text">Made COVID 19 dashboard service with available html template use Spring Boot Framework</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3 text-center">
+            <div class="card text-white" style="background-color: rgb(0, 0, 0)">
+              <img src="https://storage.cloud.google.com/kominfodicodingcourse01/message.jpg" class="card-img-top" alt="Projects 3" />
+              <div class="card-body">
+                <a href="" class="card-text">Made a simple messaging service used RabbitMQ and Spring Boot Java Framework</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Projects-->
+    <!--Footer Start-->
+    <footer>
+      <section id="social">
+        <div class="container" style="padding: 2rem 0" align="center">
+          <a href="https://web.facebook.com/iduyyyy/">
+            <i class="fa fa-facebook fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+          <a href="https://twitter.com/FajriTsaniY">
+            <i class="fa fa-twitter fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+          <a href="mailto:fajri2723@gmail.com">
+            <i class="fa fa-google fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fajritsani/">
+            <i class="fa fa-linkedin fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+          <a href="https://www.instagram.com/fajritsaniy/">
+            <i class="fa fa-instagram fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+          <a href="https://github.com/fajritsaniy">
+            <i class="fa fa-github fa-lg white-text me-md-4 me-3 fa-2x"></i>
+          </a>
+        </div>
+        <div style="background: rgb(3, 0, 27)">
+          <p style="color: #91bec2; padding: 15px 0" align="center">&copy; 2022 Copyright: <a href="mailto:fajri2723@gmail.com">Fajri Tsani</a></p>
+        </div>
+      </section>
+    </footer>
 
-		.links>a {
-			color: white;
-			padding: 0 25px;
-			font-size: 12px;
-			font-weight: 600;
-			letter-spacing: .1rem;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
+    <!--Footer End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 
-		.m-b-md {
-			margin-bottom: 30px;
-		}
-	</style>
-</head>
-
-<body>
-	<div class="flex-center position-ref full-height">
-		<div class="top-right links">
-			<!-- <a href="/form/" style="margin-right:-30px;">Data Prepare</a> -->
-			<a href="/datatest/" style="margin-right:-30px;">Data Catalog</a>
-			<a href="/dataproperties/" style="margin-right:-30px;">Data Properties</a>
-			<a href="/add/">Add Datatest</a>
-		</div>
-		<div class="content">
-			<div class="title m-b-md">
-				Datatest Management
-			</div>
-
-		</div>
-	</div>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
